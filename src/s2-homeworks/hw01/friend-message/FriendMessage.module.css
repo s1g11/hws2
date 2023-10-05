@@ -1,31 +1,53 @@
 .friendMessage {
-
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  margin: 0 0 25px 0;
 }
 
 .friendImageAndText {
-
+  display: flex;
+  gap: 10px;
 }
 
 .friendImageAndText img {
-
+  width: 48px;
+  height: 48px;
+  align-self: flex-end;
 }
 
 .friendText {
-
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #F5F7FB;
+  box-shadow: 0 2px #E8E8E9;
 }
 
 .friendText:after {
-
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #F5F7FB;
+  bottom: -2px;
+  width: 20px;
+  height: 20px;
+  left: -10px;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  border-bottom: 2px solid #E8E8E9;
 }
 
 .friendName {
-
+  font-weight: 600;
 }
 
 .friendMessageText {
-
+  font-family: "Montserrat";
 }
 
 .friendTime {
-
+  width: 48px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
 }
